@@ -153,6 +153,7 @@
     width: 60px;
     height: 20px;
 }
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -161,3 +162,35 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: spostamento-destra;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spostamento-destra {
+    0% {left: 10%;}
+    50% {left: 60%;}
+    100%{left:10%}
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: spostamento-sinistra;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spostamento-sinistra {
+    0% {right: 20%;}
+    50% {right: 60%;}
+    100%{right:20%}
+}
+
+
+
+
+
+
