@@ -77,6 +77,15 @@
     filter: grayscale(100%) blur(2px);
 }
 
+.ex-8-img {
+    transition: border-radius 2s, filter 2s;
+}
+
+.ex-8-img:hover {
+    filter: brightness(50%) contrast(80%);
+    border-radius: 30px;
+}
+
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
