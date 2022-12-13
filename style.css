@@ -103,7 +103,6 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    transform: rotate(-100%);
 }
 
 @keyframes rotazione {
@@ -117,6 +116,22 @@
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation-name: rotazione-incompleta;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotazione-incompleta {
+    0% {rotate: 0deg;}
+    25% {rotate: 90deg;}
+    50% {rotate: 180deg;}
+    75% {rotate: 270deg;}
+    100%{rotate: 0deg;}
+}    
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
